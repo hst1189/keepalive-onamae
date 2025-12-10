@@ -2,9 +2,9 @@ name: auto
 
 on:
   schedule:
-    - cron: 0 0/10 * * *
+    - cron: '0 */10 * * *'  # 每10分钟运行一次
   workflow_dispatch:  # 允许手动运行
-
+  
 jobs:
   auto_login:
     runs-on: ubuntu-latest
