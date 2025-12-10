@@ -2,7 +2,7 @@ name: auto
 
 on:
   schedule:
-    - cron: '*/10 * * * *'  # 毎時、10分ごとに実行する
+    - cron: 0 0/10 * * *
   workflow_dispatch:  # 允许手动运行
 
 jobs:
