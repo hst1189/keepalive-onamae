@@ -2,8 +2,8 @@ name: auto
 
 on:
   schedule:
-    - cron: '0 */10 * * *'  # 每10分钟运行一次
-  workflow_dispatch:  # 允许手动运行
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
   
 jobs:
   auto_login:
